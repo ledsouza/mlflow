@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mlflow_venv"
+version = "0.1.0"
+description = ""
+authors = ["ledsouza <leandro.souza.159@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mlflow = "^2.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
