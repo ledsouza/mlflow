@@ -1,0 +1,26 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.3
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.core.Booster
+    model_format: xgb
+    xgb_version: 2.1.0
+mlflow_version: 2.15.0
+model_size_bytes: 37570
+model_uuid: 6d6a9f7f1f84414aa49aea41faf9a109
+run_id: b5507f80842d4bc6975b1071ba36e1bc
+signature:
+  inputs: '[{"type": "double", "name": "tamanho", "required": true}, {"type": "long",
+    "name": "ano", "required": true}, {"type": "long", "name": "garagem", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-07-29 19:35:11.380083'
