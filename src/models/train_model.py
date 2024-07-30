@@ -38,7 +38,7 @@ target = df["preco"]
 features_train, features_test, target_train, target_test = train_test_split(
     features, target, test_size=0.3, random_state=SEED)
 
-mlflow.set_tracking_uri("http://127.0.0.1:8080")
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
 
 experiment_name = "house-prices-script"
 mlflow.set_experiment(experiment_name)
